@@ -3,6 +3,8 @@
 *.fls
 *.toc
 *.ent
+*.jpg
+*.png
 *.fdb_latexmk
 *.synctex.gz
 .DS_Store
