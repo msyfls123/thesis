@@ -1,7 +1,7 @@
 %!TEX program = xelatex
 
 \documentclass[UTF8]{ctexrep}
-\usepackage{fontspec, xunicode, xltxtra, endnotes,hyperref, booktabs}  
+\usepackage{fontspec, xunicode, xltxtra, endnotes,hyperref, booktabs, multirow, listings, xcolor}  
 % \setmainfont{Hiragino Sans GB} 
 
 % 页边距
@@ -20,7 +20,16 @@
 
 \begin{document}
 
+\lstset{numbers=left, 
+numberstyle= \tiny, 
+keywordstyle= \color{ blue!70},commentstyle=\color{red!50!green!50!blue!50}, 
+frame=shadowbox, 
+rulesepcolor= \color{ red!20!green!20!blue!20} 
+} 
+
 \maketitle{}
+
+\renewcommand{\abstractname}{Abstract}
 
 \tableofcontents
 
@@ -29,7 +38,8 @@
 \input{chapter/human}
 \input{chapter/behavior}
 \input{chapter/implement}
-\input{chapter/inspration}
+\input{chapter/rate}
+\input{chapter/conclusion}
 \input{chapter/ref}
 
 \end{document}

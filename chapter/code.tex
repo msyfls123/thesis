@@ -1,0 +1,50 @@
+\subsection{示例代码}
+实现一个简单的可用鼠标或注视（Fuse）操作的小场景。
+
+
+\emph{HTML}
+\begin{lstlisting}[language=HTML]
+<a-scene>
+  <a-entity
+    id="box" cursor="fuse:true;fuseTimeout:1000"
+    geometry="primitive: box"
+    material="color: blue">
+    <a-box
+      src="img/logo.jpg"
+      position="0 3 -5"
+      rotation="45 0 45"
+      scale="2 2 2"
+      id="box1">
+      <a-animation
+        attribute="position"
+        begin="focus"
+        to="0 2.2 -5"
+        direction="normal"
+        dur="2000">
+      </a-animation>
+    </a-box>
+  </a-entity>
+
+  <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
+
+  <a-plane 
+    position="0 0 -4" 
+    rotation="-90 0 0" 
+    width="4" 
+    height="4" 
+    color="#7BC8A4">
+  </a-plane>
+  <a-sky color="#ECECEC"></a-sky>
+</a-scene>
+\end{lstlisting} 
+
+\emph{JavaScript}
+\begin{lstlisting}{language=JavaScript}
+document.querySelector('#box').addEventListener('click', function(e){
+  document.querySelector('#box1').emit('focus')
+})
+\end{lstlisting}
+
+\subsection{未完待续}
