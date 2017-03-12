@@ -8,49 +8,63 @@
 % oldfontcfg,使用老板的字体设置,建议初学者开启
 
 % 设置图形文件的搜索路径
-\graphicspath{{figures/}}
+\graphicspath{{pic/}}
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 %仅用于本示例文档中显示特殊字符串
-\usepackage{xltxtra}
-%仅用于子图
+\usepackage{xltxtra, endnotes,hyperref, booktabs, multirow, listings, xcolor}
+%仅用于子图,
 %\usepackage{graphicx}
 %\usepackage{subfigure}
+% 文献
+\renewcommand{\theendnote}{[\arabic{endnote}]}
+%\setcounter{endnote}{0}
+\renewcommand{\notesname}{参考文献}
+%\renewcommand{\makeenmark}{\hbox{$^{[\theenmark]}$}}
+\makeatletter
+\def\enoteformat{
+  \rightskip\z@ \leftskip\z@ \parindent=1.8em
+  \leavevmode{\setbox\z@=\lastbox}\llap{\theenmark}
+}
+\def\enoteheading{
+\noindent\chapter*{\notesname}
+}
+\makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 封面部分
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   % 中文封面内容
-  \title{MapReduce中间结果重用优化及分析}%一般情况下扉页和封皮、书脊共用一个标题文本，可以不用定义\spinetitle（仅硕博有用）, \covertitle（本硕博均有用）和\encovertitle（仅本科有用）。特殊情况见下。
-  \spinetitle{MapReduce中间结果重用优化及分析}
+  \title{基于全景漫游技术的可视化交互设计理论与实践研究}%一般情况下扉页和封皮、书脊共用一个标题文本，可以不用定义\spinetitle（仅硕博有用）, \covertitle（本硕博均有用）和\encovertitle（仅本科有用）。特殊情况见下。
+  \spinetitle{基于全景漫游技术的可视化交互设计理论与实践研究}
   %特殊情况1：本例中\title命令里含有换行控制字符，这会导致制作书脊的时候出现错误，例如如果你注释掉\spinetitle{...}这一行就会报错。这时需要定义一个不含换行等命令的\spinetitle，这并不表示\spinetitle里不能有任何命令——只能使用有限的命令。
   %特殊情况2：本例中标题过长，所以需要缩小书脊标题的字号。
   %特殊情况3：本例中中英文混排，由于tex竖排的原理限制，中英文基线不重合，所以需要人工调整英文的基线。具体调整量根据不同字体有所不同。
-  \covertitle{MapReduce中间结果重用优化及分析}
+  \covertitle{基于全景漫游技术的可视化\\交互设计理论与实践研究}
   %\covertitle{中文题目第一行\\中文题目第二行}
   %不要在此调整封皮字体大小！ Do not set Cover Page font size here!
   %特殊情况4：本例中\title中含有多个换行，导致标题超过了两行。根据制本厂规定，封皮标题不能超过两行。因此需要定义封皮使用的标题\covertitle. 如果你注释掉这一行，就会发现封皮不符合规定。
-  \encovertitle{MapReduce Performance Acceleration and Analytics with Intermediate Results Reusing}
+  \encovertitle{Research of Visual Interaction Design Theories and Applyments Based on Panorama Roaming Technology}
   %\encovertitle{English Title Line 1\\English Title Line 2\\English Title Line 3}
   %不要在此调整封皮字体大小！ Do not set Cover Page font size here!
   %特殊情况5:仅本科生有用。本科封皮中有英文标题，不超过三行。与上类似。
 
-  \author{徐\ 锦\ 来}
-  \depart{信息工程学院}%系别，硕博请用系代号，本科请用全称如
+  \author{马\ 申\ 彦}
+  \depart{机械与电子信息学院}%系别，硕博请用系代号，本科请用全称如
   %\depart{数理化和信息工程系}
-  \major{软件工程专业}%专业，硕博请用全称，本科不需要
-  \advisor{罗忠文\ 教授}
+  \major{设计学}%专业，硕博请用全称，本科不需要
+  \advisor{周晔\ 副教授}
   %\coadvisor{姚宏\ 教授}%第二导师，没有请注释掉
-  \studentid{120121352}%
-  \submitdate{二〇一五年五月}
+  \studentid{1201410655}%
+  \submitdate{二〇一七年五月}
   %\numsubmitdate{2015.04}
   % 英文封面内容
-  \entitle{MapReduce Performance Acceleration and Analytics \\with Intermediate Results Reusing}
-  \enauthor{Jinlai Xu}
-  \enmajor{Software Engineering}
-  \enadvisor{Prof. Zhongwen Luo}
+  \entitle{Research of Visual Interaction Design Theories\\and Applyments Based on Panorama Roaming Technology}
+  \enauthor{Shenyan Ma}
+  \enmajor{Design specialist}
+  \enadvisor{Prof. Ye Zhou}
   %\encoadvisor{Prof. Hong Yao}%另外一个导师
-  \ensubmitdate{2015.05}
+  \ensubmitdate{2017.05}
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % If you use another language instead of chinese and english, then you
@@ -73,6 +87,17 @@
 %  \otherdepart{mou xi}
 
 \begin{document}
+
+%代码
+\lstset{numbers=left, 
+numberstyle= \tiny, 
+keywordstyle= \color{ blue!70},commentstyle=\color{red!50!green!50!blue!50}, 
+frame=shadowbox, 
+rulesepcolor= \color{ red!20!green!20!blue!20} 
+} 
+
+%表格换行
+\renewcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
   % 封面
   \maketitle
@@ -123,9 +148,9 @@
 	%硕博论文修改这里
 	%%%%%%%%%%%%%%%%%
   % 个人简介
-  \include{chapter/resume}
+  \input{chapter/resume}
   % 摘要
-  \include{chapter/abstract}%此文件中含有中英文摘要
+  \input{chapter/abstract2}%此文件中含有中英文摘要
 	% 目录
 	\tableofcontents
 	%默认表格、插图、算法索引名称分别为“表格索引”、“插图索引”和“算法索引”
@@ -135,15 +160,15 @@
 	%\ustcloaname{...}
 
 	% 表格索引
-	\ustclot
+	%\ustclot
 	% 插图索引
-	\ustclof
+	%\ustclof
 	%算法索引 
 	%如果需要使用算法环境并列出算法索引，请加入补充宏包。
 	%\ustcloa
 	
 	%符号说明，需要加入补充包
-	\include{chapter/denotation}%不是必需的，如果不想列出请注释掉
+	%\include{chapter/denotation}%不是必需的，如果不想列出请注释掉
 \fi
 \makeatother
 
@@ -152,15 +177,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter
 
-  \include{chapter/chap-intro}
-  \include{chapter/chap-analytics}
-  \include{chapter/chap-IntermediateAnalysis}
-  \include{chapter/chap-memomr}
-  \include{chapter/chap-experiment}
+  % \include{chapter/chap-intro}
+  % \include{chapter/chap-analytics}
+  % \include{chapter/chap-IntermediateAnalysis}
+  % \include{chapter/chap-memomr}
+  % \include{chapter/chap-experiment}
   %\include{chapter/chap-application}
-  \include{chapter/chap-summary}
+  % \include{chapter/chap-summary}
   %自行添加
   %\include{chapter/...}
+  \input{chapter/intro}
+  \input{chapter/survey}
+  \input{chapter/human}
+  \input{chapter/form}
+  \input{chapter/model}
+  \input{chapter/implement}
+  \input{chapter/rate}
+  \input{chapter/conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 附件部分
@@ -177,17 +210,17 @@
   % 参考文献
   % 使用 BibTeX
   % 选择参考文献的排版格式。注意ustcbib这个格式不保证完全符合要求，请自行决定是否使用
-  \bibliographystyle{cugbib}%{GBT7714-2005NLang-UTF8}
+  %\bibliographystyle{cugbib}%{GBT7714-2005NLang-UTF8}
   %\bibliographystyle{gbt7714-2005}%{GBT7714-2005NLang-UTF8}
-  \bibliography{bib/ref}
-  \nocite{*} % for every item
+  %\bibliography{bib/ref}
+  %\nocite{*} % for every item
   % 不使用 BibTeX
-  % \include{chapter/bib}
+  \input{chapter/ref}
 
   % 附录，没有请注释掉
-  \begin{appendix}
-    \include{chapter/chap-req}
-  \end{appendix}
+  %\begin{appendix}
+  %  \include{chapter/chap-req}
+  %\end{appendix}
 
   
 

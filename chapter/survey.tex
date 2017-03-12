@@ -3,12 +3,12 @@
 \section{全景漫游技术总览}
 
 全景漫游技术按载体分类可分为：
-\begin{enumerate}
-\item{\emph{场景捕获硬件技术：}视频捕获设备及其保障设备，用以采集全景漫游的视频、图片、音频等素材。}
-\item{\emph{场景呈现硬件技术：}主要包括 VR 眼镜、VR 互动手柄、VR 主机等。}
-\item{\emph{场景处理技术：}场景规划设计、场景素材的保存与传输以及相应程序开发等。}
-\item{\emph{场景还原与增强技术：}将场景素材与功能模块有机地整合，提供给用户身临其境般的全景漫游体验。}
-\end{enumerate}
+\begin{description}
+\item[场景捕获硬件技术]视频捕获设备及其保障设备，用以采集全景漫游的视频、图片、音频等素材。
+\item[场景呈现硬件技术] 主要包括 VR 眼镜、VR 互动手柄、VR 主机等。
+\item[场景处理技术] 场景规划设计、场景素材的保存与传输以及相应程序开发等。
+\item[场景还原与增强技术] 将场景素材与功能模块有机地整合，提供给用户身临其境般的全景漫游体验。
+\end{description}
 
 \subsection{场景呈现硬件技术}
 相对而言，硬件技术相比于后两者进入门槛更高。目前市场上三大 VR 硬件厂商 OculusRift、HTCVive 和 PlayStationVR 几乎垄断了高端 VR 播放设备市场。之后加入 VR 市场的企业（如暴风、大朋、3Glasses、蚁视等）几乎都放低了姿态，推出了价格低廉但基本满足播放功能的入门级 VR 眼镜作为卖点。但随着 Google Cardboard 的推出，这款几乎没有成本可言的开源“硬件”迅速占领了低端 VR 硬件行业相当客观的市场份额。
@@ -24,7 +24,7 @@
 
 \paragraph{场景前处理代表：Unity3D}
 
-Unity3D 是由 Unity Technologies 开发的一个让玩家轻松创建诸如三维视频游戏、建筑可视化、实时三维动画等类型互动内容的多平台的综合型游戏开发工具，是一个全面整合的专业游戏引擎。\endnote{百度百科.Unity3D_百度百科. http://t.cn/RJDzA1F[EB]}
+Unity3D 是由 Unity Technologies 开发的一个让玩家轻松创建诸如三维视频游戏、建筑可视化、实时三维动画等类型互动内容的多平台的综合型游戏开发工具，是一个全面整合的专业游戏引擎。\endnote{百度百科.Unity3D-百度百科. http://t.cn/RJDzA1F[EB]}
 
 \paragraph{场景后处理代表：Krpano}
 Krpano 是一个小巧灵活的用来呈现各种全景图像和交互式的虚拟之旅的高性能全景查看器。可作为 Flash 和 HTML5 应用程序在 Web 上使用。并附有利用拖拽全景生成场景的 Krpano Tools 以供开发者快速生成用以展示的全景场景。本文将应用其进行部分设计案例的制作与演示。
@@ -42,7 +42,9 @@ VR 内容开发受市场认可，线下体验馆增长迅速。由于中国 VR �
 
 \begin{figure}[htp]
 \centering
+\fbox{
 \includegraphics[width=.4\textwidth]{market}
+}
 \caption{2016-2020 年中国 VR 用户规模}
 \label{fig:market}
 \end{figure}

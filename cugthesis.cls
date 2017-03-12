@@ -544,10 +544,10 @@
 %\CTEXsetup[beforeskip=15pt]{section}%规定13pt
 %\CTEXsetup[afterskip=35pt]{section}%规定13pt
 \CTEXsetup[format={\flushleft\hei\sihao}]{subsection}%规定13pt
-\CTEXsetup[beforeskip=-5pt]{subsection}%规定13pt
-\CTEXsetup[afterskip=-5pt]{subsection}%规定13pt
-\CTEXsetup[beforeskip=0pt]{subsubsection}%规定13pt
-\CTEXsetup[afterskip=0pt]{subsubsection}%规定13pt
+\CTEXsetup[beforeskip=5pt]{subsection}%规定13pt
+\CTEXsetup[afterskip=5pt]{subsection}%规定13pt
+\CTEXsetup[beforeskip=5pt]{subsubsection}%规定13pt
+\CTEXsetup[afterskip=5pt]{subsubsection}%规定13pt
 \CTEXsetup[format={\flushleft\hei\xiaosihao}]{subsubsection}%规定12pt，即小四号
 \CTEXsetup[number={\S\arabic{chapter}.\arabic{section}}]{section}
 \ifustc@notchinese
@@ -569,7 +569,7 @@
 \titlespacing*{\section}
   {0pt}{19pt}{19pt}
 \titlespacing*{\subsection}
-  {0pt}{5pt}{5pt}
+  {0pt}{10pt}{10pt}
 \titlespacing*{\subsubsection}
   {0pt}{5pt}{5pt}
 
