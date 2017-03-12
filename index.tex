@@ -1,0 +1,49 @@
+%!TEX program = xelatex
+
+\documentclass[UTF8]{ctexrep}
+\usepackage{fontspec, xunicode, xltxtra, endnotes,hyperref, booktabs, multirow, listings, xcolor}  
+% \setmainfont{Hiragino Sans GB} 
+
+% 页边距
+\usepackage[top=0.9cm,bottom=1.5cm,left=2cm,right=2cm,includehead,includefoot]{geometry}
+% 图片路径
+\graphicspath{{pic/}}
+% 文献
+\renewcommand{\theendnote}{[\arabic{endnote}]}
+\setcounter{endnote}{0}
+\renewcommand{\notesname}{参考文献}
+\def\enoteheading{
+\noindent\chapter{\notesname}
+\par\noindent\rule{.5\textwidth}{0.4pt}
+\vskip 5pt}
+
+\title{基于全景漫游技术的可视化交互设计理论与实践研究}
+\author{马申彥}
+
+\begin{document}
+
+\lstset{numbers=left, 
+numberstyle= \tiny, 
+keywordstyle= \color{ blue!70},commentstyle=\color{red!50!green!50!blue!50}, 
+frame=shadowbox, 
+rulesepcolor= \color{ red!20!green!20!blue!20} 
+} 
+
+\maketitle{}
+
+
+\input{chapter/abstract}
+
+\tableofcontents
+
+\input{chapter/intro}
+\input{chapter/survey}
+\input{chapter/human}
+\input{chapter/form}
+\input{chapter/model}
+\input{chapter/implement}
+\input{chapter/rate}
+\input{chapter/conclusion}
+\input{chapter/ref}
+
+\end{document}
