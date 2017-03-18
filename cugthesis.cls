@@ -404,8 +404,8 @@
 %remember to use [htp] or [htpb] for placement
 
 %Add by xujinlai@gmail.com: set the float sep to 0pt
-\setlength{\abovecaptionskip}{0pt}
-\setlength{\belowcaptionskip}{0pt}
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{5pt}
 \setlength{\parskip}{0pt}
 \setlength{\floatsep}{0pt}
 \setlength{\textfloatsep}{5pt}
