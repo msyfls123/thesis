@@ -5,4 +5,5 @@
 *.ent
 *.fdb_latexmk
 *.synctex.gz
+main2.*
 .DS_Store

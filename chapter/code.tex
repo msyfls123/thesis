@@ -41,9 +41,10 @@
 
 \emph{JavaScript}
 \begin{lstlisting}{language=JavaScript}
-document.querySelector('#box').addEventListener('click', function(e){
-  document.querySelector('#box1').emit('focus')
-})
+document.querySelector('#box')
+  .addEventListener('click', function(e) {
+    document.querySelector('#box1').emit('focus')
+  })
 \end{lstlisting}
 
 \subsection{系统截图}
@@ -52,25 +53,34 @@ document.querySelector('#box').addEventListener('click', function(e){
 \begin{figure}[htp]
 \centering
 \fbox{
-\includegraphics[width=.9\textwidth]{app1}
+\includegraphics[width=.7\textwidth]{app1}
 }
-\caption{支付界面截图}
+\caption{场景详情界面截图}
 \label{fig:app1}
 \end{figure}
 
 \begin{figure}[htp]
 \centering
 \fbox{
-\includegraphics[width=.9\textwidth]{app2}
+\includegraphics[width=.7\textwidth]{app4}
 }
-\caption{场景详情界面截图}
+\caption{场景分类界面截图}
+\label{fig:app4}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\fbox{
+\includegraphics[width=.7\textwidth]{app2}
+}
+\caption{支付界面截图}
 \label{fig:app2}
 \end{figure}
 
 \begin{figure}[htp]
 \centering
 \fbox{
-\includegraphics[width=.9\textwidth]{app3}
+\includegraphics[width=.7\textwidth]{app3}
 }
 \caption{场景漫游界面截图}
 \label{fig:app3}
