@@ -11,7 +11,7 @@
 \graphicspath{{pic/}}
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 %仅用于本示例文档中显示特殊字符串
-\usepackage{xltxtra, endnotes,hyperref, booktabs, multirow, listings, xcolor}
+\usepackage{xltxtra, endnotes,hyperref, booktabs, multirow, listings, xcolor, paralist}
 %仅用于子图,
 %\usepackage{graphicx}
 %\usepackage{subfigure}
@@ -29,6 +29,14 @@
 \noindent\chapter*{\notesname}
 }
 \makeatother
+
+% List紧缩
+\let\itemize\compactitem 
+\let\enditemize\endcompactitem 
+\let\enumerate\compactenum 
+\let\endenumerate\endcompactenum 
+\let\description\compactdesc 
+\let\enddescription\endcompactdesc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 封面部分
