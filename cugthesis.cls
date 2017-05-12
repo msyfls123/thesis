@@ -449,15 +449,15 @@
 \RequirePackage{titletoc}
 \RequirePackage{titlesec}
 \RequirePackage[
-  paperwidth=19.5cm,
-  paperheight=27cm,
-	left=2.5cm,
-	right=2.5cm,
-	top=2.5cm,
-	bottom=2.5cm,
+  paperwidth=21cm,
+  paperheight=29.7cm,
+	left=3cm,
+	right=3cm,
+	top=3cm,
+	bottom=3cm,
 	headsep=0.25cm,
-	headheight=1.92cm,
-	footskip=1.75cm,
+	headheight=2.5cm,
+	footskip=2cm,
 %	showframe%uncomment this if you want to check the page setup.
 	]{geometry}
 \RequirePackage{multicol}
@@ -484,7 +484,7 @@
 \setlength{\bibsep}{0pt plus1pt minus1pt}
 \setlength{\bibhang}{2\ccwd}%Applied only to author-year style
 \RequirePackage[format=hang,labelsep=quad]{caption}
-\DeclareCaptionFont{cs5size}{\xiaowu}
+\DeclareCaptionFont{cs5size}{\wuhao}
 \captionsetup[table]{labelfont={cs5size,bf}}
 \captionsetup[table]{textfont={cs5size,bf}}
 \captionsetup[figure]{labelfont={cs5size}}
@@ -498,7 +498,7 @@
 \newcommand{\erhao}     {\fontsize{22pt}   {\baselineskip}\selectfont}
 \newcommand{\xiaoer}    {\fontsize{18pt}   {\baselineskip}\selectfont}
 \newcommand{\xiaoerhao} {\fontsize{18pt}   {\baselineskip}\selectfont}
-\newcommand{\sanhao}    {\fontsize{15.75pt}{\baselineskip}\selectfont}
+\newcommand{\sanhao}    {\fontsize{16pt}{\baselineskip}\selectfont}
 \newcommand{\xiaosan}   {\fontsize{15pt}   {\baselineskip}\selectfont}
 \newcommand{\xiaosanhao}{\fontsize{15pt}   {\baselineskip}\selectfont}
 \newcommand{\sihao}     {\fontsize{14pt}   {\baselineskip}\selectfont}
@@ -536,20 +536,20 @@
 
 %Title setup
 \CTEXsetup[format={\centering}]{chapter}%规定16pt，三号为15.75pt
-\CTEXsetup[nameformat={\song\erhao}]{chapter}
-\CTEXsetup[titleformat={\song\erhao}]{chapter}
-\CTEXsetup[beforeskip={15pt}]{chapter}
-\CTEXsetup[afterskip={35pt}]{chapter}
-\CTEXsetup[format={\centering\hei\sanhao}]{section}%规定14pt，即四号
-%\CTEXsetup[beforeskip=15pt]{section}%规定13pt
-%\CTEXsetup[afterskip=35pt]{section}%规定13pt
-\CTEXsetup[format={\flushleft\hei\sihao}]{subsection}%规定13pt
-\CTEXsetup[beforeskip=5pt]{subsection}%规定13pt
-\CTEXsetup[afterskip=5pt]{subsection}%规定13pt
-\CTEXsetup[beforeskip=5pt]{subsubsection}%规定13pt
-\CTEXsetup[afterskip=5pt]{subsubsection}%规定13pt
+\CTEXsetup[nameformat={\hei\sanhao}]{chapter}
+\CTEXsetup[titleformat={\hei\sanhao}]{chapter}
+\CTEXsetup[beforeskip={20pt}]{chapter}
+\CTEXsetup[afterskip={20pt}]{chapter}
+\CTEXsetup[format={\centering\hei\sihao}]{section}%规定14pt，即四号
+\CTEXsetup[beforeskip=5pt]{section}%规定13pt
+\CTEXsetup[afterskip=5pt]{section}%规定13pt
+\CTEXsetup[format={\flushleft\hei\xiaosihao}]{subsection}%规定13pt
+\CTEXsetup[beforeskip=-5pt]{subsection}%规定13pt
+\CTEXsetup[afterskip=-5pt]{subsection}%规定13pt
+\CTEXsetup[beforeskip=0pt]{subsubsection}%规定13pt
+\CTEXsetup[afterskip=0pt]{subsubsection}%规定13pt
 \CTEXsetup[format={\flushleft\hei\xiaosihao}]{subsubsection}%规定12pt，即小四号
-\CTEXsetup[number={\S\arabic{chapter}.\arabic{section}}]{section}
+\CTEXsetup[number={\arabic{chapter}.\arabic{section}}]{section}
 \ifustc@notchinese
 	\CTEXsetup[name={Part\space,}]{part}
 	\CTEXsetup[name={Chapter\space,}]{chapter}
@@ -569,7 +569,7 @@
 \titlespacing*{\section}
   {0pt}{19pt}{19pt}
 \titlespacing*{\subsection}
-  {0pt}{10pt}{10pt}
+  {0pt}{5pt}{5pt}
 \titlespacing*{\subsubsection}
   {0pt}{5pt}{5pt}
 
@@ -1127,18 +1127,18 @@
   \fancypagestyle{plain}{%
   \fancyhf{}%
   \pagestyle{fancy}
-  \fancyhead[LO,RE]{\song\xiaowu \ustc@ensubmitdate}
-  \fancyhead[CO]{\song\xiaowu {中国地质大学硕士学位论文}}
-  \fancyhead[CE]{\song\xiaowu \ustc@author :~~ \ustc@spinetitle}
-  \fancyhead[LE,RO]{\song\xiaowu ~\thepage~}
+  \fancyhead[LO,RE]{\song\wuhao \ustc@ensubmitdate}
+  \fancyhead[CO]{\song\wuhao {中国地质大学硕士学位论文}}
+  \fancyhead[CE]{\song\wuhao \ustc@author :~~ \ustc@spinetitle}
+  \fancyhead[LE,RO]{\song\wuhao ~\thepage~}
   }
 \pagestyle{plain}
   \fancyhf{}
   \pagestyle{fancy}
-  \fancyhead[LO,RE]{\song\xiaowu \ustc@ensubmitdate}
-  \fancyhead[CO]{\song\xiaowu {中国地质大学硕士学位论文}}
-  \fancyhead[CE]{\song\xiaowu \ustc@author :~~ \ustc@spinetitle}
-  \fancyhead[LE,RO]{\song\xiaowu ~\thepage~}
+  \fancyhead[LO,RE]{\song\wuhao \ustc@ensubmitdate}
+  \fancyhead[CO]{\song\wuhao {中国地质大学硕士学位论文}}
+  \fancyhead[CE]{\song\wuhao \ustc@author :~~ \ustc@spinetitle}
+  \fancyhead[LE,RO]{\song\wuhao ~\thepage~}
 }
 
 %Abstracts and thanks
@@ -1229,17 +1229,17 @@
     }
 %% tableofcontent
 \titlecontents{chapter}[0em]
-  {\vspace{1bp}\wuhao}%14pt，如果希望美观一些，可以无视章节标题用宋体的规定，自行添加\bfseries
+  {\vspace{1bp}\sihao}%14pt，如果希望美观一些，可以无视章节标题用宋体的规定，自行添加\bfseries
   {\thecontentslabel\hspace*{0.5em}}
   {}
   {\titlerule*[0.2pc]{$\cdot$}\contentspage}
-\titlecontents{section}[2\ccwd]
-  {\vspace{1bp} \wuhao}
-  {\S\thecontentslabel\hspace*{0.5em}}
+\titlecontents{section}[1\ccwd]
+  {\vspace{1bp} \xiaosi}
+  {\thecontentslabel\hspace*{0.5em}}
   {}
   {\titlerule*[0.2pc]{$\cdot$}\contentspage}
-\titlecontents{subsection}[4.2\ccwd]%原来是2.3
-  {\vspace{1bp} \wuhao}%规定三级标题是10.5pt
+\titlecontents{subsection}[2\ccwd]%原来是2.3
+  {\vspace{1bp} \xiaosi}%规定三级标题是10.5pt
   {\thecontentslabel\hspace*{0.5em}}
   {}
  {\titlerule*[0.2pc]{$\cdot$}\contentspage}
@@ -1290,7 +1290,7 @@
 	\renewcommand\chaptername{\appendixname~\thechapter}}
   {\if@appendixinbackmatter\@mainmatterfalse\fi
 }
-\renewcommand{\baselinestretch}{1.05}
+\renewcommand{\baselinestretch}{1.38} % MSY：行间距 
 \wuhao
 %\renewcommand{\listparsep}{0ex} %段落间距
 %\renewcommand{\listtopsep}{0ex} %列表到上下文的垂直距离
