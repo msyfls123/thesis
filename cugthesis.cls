@@ -1046,6 +1046,12 @@
 
 本人所呈交的硕士学位论文没有违反学术道德和学术规范，没有侵权行为，并愿意承担由此而产生的法律责任和法律后果。
 }
+% Dirty apply author name in case of compile error
+\newcommand{\ustc@teachdeclaretext}{%
+本人郑重承诺：本人所指导的马申彥学位论文《\ustc@spinetitle》，是在本人的指导下，研究生在中国地质大学（武汉）攻读硕士学位期间独立进行研究工作所取得的成果，论文由研究生独立完成。
+
+研究生所呈交的硕士学位论文没有违反学术道德和学术规范，没有侵权行为，并愿意承担由此而产生的与导师相关的责任和后果。
+}
 \newcommand{\ustc@authorization}{%
 本人授权中国地质大学（武汉）可采用影印、缩印、数字化或其它复制手段保存本学位论文；学校可向国家有关部门或机构送交本学位论文的电子版全文，编入有关数据库进行检索、下载及文献传递服务；同意在校园网内提供全文浏览和下载服务。
 
@@ -1069,8 +1075,26 @@
   \vskip1cm
   \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{\hspace{4\ccwd}年\hspace{2\ccwd}月\hspace{2\ccwd}日}}
   \end{flushright}
-   \clearpage
-     \if@twoside
+  \clearpage
+  \if@twoside
+   \thispagestyle{empty}
+   \cleardoublepage
+  \fi
+  \thispagestyle{empty}
+  \vspace*{2em}
+  \begin{center}\xiaoer\bfseries{中国地质大学（武汉）研究生学位论文导师承诺书}\end{center}
+  \vskip1.5cm
+  \begin{spacing}{1.5}
+  \par\sihao\ustc@teachdeclaretext\par
+  \end{spacing}
+  \vskip1.5cm
+  \begin{flushright}
+  \sihao{指导教师（签字）：\ustc@underline[6cm]{}}\\
+  \vskip1cm
+  \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{\hspace{4\ccwd}年\hspace{2\ccwd}月\hspace{2\ccwd}日}}
+  \end{flushright}
+  \clearpage
+  \if@twoside
     \thispagestyle{empty}
     \cleardoublepage
   \fi
@@ -1290,7 +1314,7 @@
 	\renewcommand\chaptername{\appendixname~\thechapter}}
   {\if@appendixinbackmatter\@mainmatterfalse\fi
 }
-\renewcommand{\baselinestretch}{1.38} % MSY：行间距 
+\renewcommand{\baselinestretch}{1.25} % MSY：行间距
 \wuhao
 %\renewcommand{\listparsep}{0ex} %段落间距
 %\renewcommand{\listtopsep}{0ex} %列表到上下文的垂直距离
