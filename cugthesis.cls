@@ -1174,9 +1174,9 @@
 	\newcommand{\ustc@thanksname}{致\hspace{\ccwd}谢}
 \fi
 \newcommand\keywords[1]{%
-  \vspace{3.5ex}\noindent\bfseries{ 关键词：~ #1}}
+  \vspace{3.5ex}\noindent{ \textbf{关键词：}~ #1}}
 \newcommand\enkeywords[1]{%
-  \vspace{3.5ex}\noindent\bf{ Keywords:~ #1}}
+  \vspace{3.5ex}\noindent{ \textbf{Keywords: }~ #1}}
 \newenvironment{cnabstract}
   {%
     \cleardoublepage
@@ -1184,15 +1184,15 @@
     %\renewcommand{\baselinestretch}{0.8}{
     \begin{spacing}{1.2}
     \begin{center}
-    \vspace*{2em}
-    \hei\xiaoer{\ustc@title}\\
-    \vspace{1em}
-    \begin{tabular}{ll}
-    \song\xiaosi{硕\hspace{0.5\ccwd}士\hspace{0.5\ccwd}生:}~&\song\xiaosi{\ustc@author} \\ 
-    \song\xiaosi{指导教师:}~&\song\xiaosi{\ustc@advisor}
-    \end{tabular}\\
-    \vspace{1em}
-    \hei\sihao{\ustc@cnabstractname}
+    %\vspace*{2em}
+    %\hei\xiaoer{\ustc@title}\\
+    %\vspace{1em}
+    %\begin{tabular}{ll}
+    %\song\xiaosi{硕\hspace{0.5\ccwd}士\hspace{0.5\ccwd}生:}~&\song\xiaosi{\ustc@author} \\ 
+    %\song\xiaosi{指导教师:}~&\song\xiaosi{\ustc@advisor}
+    %\end{tabular}\\
+    %\vspace{1em}
+    \hei\xiaoer{\ustc@cnabstractname}
     \vspace{0.9em}
     \end{center}
     \end{spacing}
@@ -1206,16 +1206,16 @@
   \thispagestyle{empty}
   \begin{spacing}{1.2}
   \begin{center}
-  \vspace*{2em}
-  \song\xiaoer\textbf{\ustc@entitle}\\
-  \vspace{1em}
-  \begin{tabular}{l}
-  \song\xiaosi{Master Candidate:}~\song\xiaosi{\ustc@enauthor} \\ 
-  \song\xiaosi{Supervisor:}~\song\xiaosi{\ustc@enadvisor}
-  \end{tabular}\\
-  \vspace{1em}
-  \vspace{5pt}
-  \song\sihao{\ustc@enabstractname}
+  %\vspace*{2em}
+  %\song\xiaoer\textbf{\ustc@entitle}\\
+  %\vspace{1em}
+  %\begin{tabular}{l}
+  %\song\xiaosi{Master Candidate:}~\song\xiaosi{\ustc@enauthor} \\ 
+  %\song\xiaosi{Supervisor:}~\song\xiaosi{\ustc@enadvisor}
+  %\end{tabular}\\
+  %\vspace{1em}
+  %\vspace{5pt}
+  \song\xiaoer{\ustc@enabstractname}
   \vspace{5pt}
   \vspace{1em}
   \end{center}
@@ -1315,6 +1315,7 @@
   {\if@appendixinbackmatter\@mainmatterfalse\fi
 }
 \renewcommand{\baselinestretch}{1.25} % MSY：行间距
+%\setlength{\baselineskip}{20pt}
 \wuhao
 %\renewcommand{\listparsep}{0ex} %段落间距
 %\renewcommand{\listtopsep}{0ex} %列表到上下文的垂直距离
