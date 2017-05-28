@@ -789,8 +789,9 @@
     \song\sanhao{密\hspace{1\ccwd}级:}~\CUGTunderline[70pt]{} \\
     \vspace{3em}
     \begin{spacing}{1.35}
-    \centering\erhao\hei{中国地质大学} \\
-    \erhao\hei\ifustc@doctor
+    \centering\yihao\song\bfseries{中国地质大学} \\
+    \vspace{.3em}
+    \yihao\song\ifustc@doctor
       {博士学位论文}
     \else\ifustc@master
       {硕士学位论文}  
@@ -798,7 +799,7 @@
       {学士学位论文}
     \fi\fi \\
     \vspace{2em}
-	 	\hei\sanhao{\ustc@title} \\
+    \hei\erhao{\ustc@covertitle} \\
     \end{spacing}
 	\vspace{2em}
 	\song
@@ -824,7 +825,7 @@
 	  {指导教师：} & \ustc@advisor\\
 	  \ifx\ustc@coadvisor\@empty\else
 	                        & \ustc@coadvisor\\\fi
-	  {所在学院：} & \ustc@depart
+	  {培养单位：} & \ustc@depart
 	\end{tabular}
   \fi
   \end{spacing}}
@@ -850,8 +851,9 @@
       \song\sanhao{研究生学号:}~{\ustc@studentid} \\
       \vspace{3em}
       \begin{spacing}{1.45}
-      \centering\erhao\hei\bfseries{中国地质大学 \\
-      \erhao\hei\ifustc@doctor
+      \centering\yihao\song\bfseries{中国地质大学 \\
+      \vspace{.3em}
+      \yihao\song\ifustc@doctor
         {博士学位论文}
       \else\ifustc@master
         {硕士学位论文}  
@@ -859,7 +861,7 @@
         {学士学位论文}
       \fi\fi }\\
       \vspace{2em}
-  	 	\hei\sanhao\textmd{\ustc@title} \\
+      \hei\erhao{\ustc@covertitle} \\
       \end{spacing}
   	\vspace{2em}
   	\song
@@ -883,8 +885,9 @@
   	  {硕\hspace{0.5\ccwd}士\hspace{0.5\ccwd}生：} & \ustc@author\\
   	  {学科专业：} & \ustc@major\\
   	  {指导教师：} & \ustc@advisor\\
-  	  \ifx\ustc@coadvisor\@empty\else
-  	                        & \ustc@coadvisor\fi
+      \ifx\ustc@coadvisor\@empty\else
+                          & \ustc@coadvisor\\\fi
+      {培养单位：} & \ustc@depart
   	\end{tabular}
     \fi
     \end{spacing}}
@@ -914,9 +917,9 @@
   \thispagestyle{empty}
   \begin{center}
     \vspace*{0cm}
-      \xiaosan{{A Dissertation Submitted to China University \\}
-      \vskip 0.5cm
-        \xiaosan{of Geosciences for}}
+      \sanhao{{A Dissertation Submitted to China University \\}
+      \vskip 0.2cm
+        \sanhao{of Geosciences for}}
     %\vskip -0.2cm %-0.6cm
     {\ifustc@doctor
       {A dissertation for doctor's degree}
@@ -928,8 +931,8 @@
     \vskip 1.5cm %1.25cm
       %\includegraphics[width=4.7cm]{ustc_logo_fig.eps}
     \vskip 1.5cm %2.4cm
-            \begin{spacing}{1.2}
-            \bfseries\xiaoer\ustc@entitle
+            \begin{spacing}{1.5}
+            \bfseries\erhao\ustc@entitle
             \end{spacing}
   \end{center}
   %\vskip 1.0cm %1.8cm 2cm 3.1cm
@@ -937,7 +940,7 @@
   \begin{center}
   {%
   \begin{spacing}{1.5}
-  \xiaosan
+  \sanhao
   \ifustc@bachelor
 	  \begin{tabular}{ll}
 	  	Author :& \ustc@underline[6cm]{\ustc@enauthor}\\
@@ -962,9 +965,9 @@
   \fi
   \end{spacing}}
   \vskip \stretch{2}
-  \xiaosan{China University of Geosciences}\\
+  \sanhao{China University of Geosciences}\\
   \vskip 5pt
-  \xiaosan{Wuhan 430074 P. R. China}
+  \sanhao{Wuhan 430074 P. R. China}
   \end{center}
   \clearpage
   \restoregeometry
