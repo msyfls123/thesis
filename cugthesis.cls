@@ -1038,7 +1038,7 @@
     %\rule[.7\baselineskip]{\headwidth}{1.2pt}\vskip-0.97\baselineskip%
     %\rule[.6\baselineskip]{\headwidth}{0.4pt}}%
     \makebox[0pt][l]{\rule[0.55\baselineskip]{\headwidth}{0.4pt}}%
-    \rule[0.7\baselineskip]{\headwidth}{0.4pt}}
+    }
 \renewcommand{\headrule}{%
     {\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi}%
      \makeheadrule}
