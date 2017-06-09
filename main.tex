@@ -210,14 +210,14 @@ rulesepcolor= \color{ red!20!green!20!blue!20}
 %% 附件部分
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
-  \makeatletter
-  \ifustc@bachelor\relax\else
+  %\makeatletter
+  %\ifustc@bachelor\relax\else
     % 致谢
-    \include{chapter/thanks}%硕博致谢部分
+    \input{chapter/thanks}%硕博致谢部分
     % 发表文章目录
     %\include{chapter/pub}
-  \fi
-  \makeatother
+  %\fi
+  %\makeatother
   % 参考文献
   % 使用 BibTeX
   % 选择参考文献的排版格式。注意ustcbib这个格式不保证完全符合要求，请自行决定是否使用
