@@ -1076,7 +1076,7 @@
    \begin{flushright}
   \sihao{学位论文作者签名：\ustc@underline[6cm]{}}\\
   \vskip1cm
-  \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{\hspace{4\ccwd}年\hspace{2\ccwd}月\hspace{2\ccwd}日}}
+  \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{2017 年 5 月 27 日}}
   \end{flushright}
   \clearpage
   \if@twoside
@@ -1094,7 +1094,7 @@
   \begin{flushright}
   \sihao{指导教师（签字）：\ustc@underline[6cm]{}}\\
   \vskip1cm
-  \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{\hspace{4\ccwd}年\hspace{2\ccwd}月\hspace{2\ccwd}日}}
+  \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{2017 年 5 月 25 日}}
   \end{flushright}
   \clearpage
   \if@twoside
@@ -1113,7 +1113,7 @@
   \begin{flushright}
   \sihao{学位论文作者签名：\ustc@underline[6cm]{}}\\
   \vskip1cm
-  \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{\hspace{4\ccwd}年\hspace{2\ccwd}月\hspace{2\ccwd}日}}
+  \sihao{日\hspace{6\ccwd}期：\ustc@underline[6cm]{2017 年 5 月 27 日}}
   \end{flushright}
   \clearpage
   \if@twoside
@@ -1154,7 +1154,7 @@
   \fancypagestyle{plain}{%
   \fancyhf{}%
   \pagestyle{fancy}
-  \fancyhead[LO,RE]{\song\wuhao \ustc@ensubmitdate}
+  %\fancyhead[LO,RE]{\song\wuhao \ustc@ensubmitdate}
   \fancyhead[CO]{\song\wuhao {中国地质大学硕士学位论文}}
   \fancyhead[CE]{\song\wuhao \ustc@author :~~ \ustc@spinetitle}
   \fancyhead[LE,RO]{\song\wuhao ~\thepage~}
@@ -1162,7 +1162,7 @@
 \pagestyle{plain}
   \fancyhf{}
   \pagestyle{fancy}
-  \fancyhead[LO,RE]{\song\wuhao \ustc@ensubmitdate}
+  %\fancyhead[LO,RE]{\song\wuhao \ustc@ensubmitdate}
   \fancyhead[CO]{\song\wuhao {中国地质大学硕士学位论文}}
   \fancyhead[CE]{\song\wuhao \ustc@author :~~ \ustc@spinetitle}
   \fancyhead[LE,RO]{\song\wuhao ~\thepage~}
